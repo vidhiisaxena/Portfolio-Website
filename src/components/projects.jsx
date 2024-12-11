@@ -1,13 +1,14 @@
+import React from "react";
 import { PROJECTS } from "../constants";
 
 const projects = () => {
   return (
     <div className="border-b border-zinc-50 pb-4">
       <h1 className="my-20 text-center text-4xl">Projects</h1>
-      <div className="">
+      <div>
         {PROJECTS.map((projects, index) => (
           <div key={index} className="mb-8 flex flex-wrap lg:justify-center">
-            <div className="w-full lg-w:1/4">
+            <div className="w-full lg:w-1/4">
               <img
                 src={projects.image}
                 width={150}
@@ -16,8 +17,17 @@ const projects = () => {
                 className="mb-6 rounded"
               />
             </div>
-            <div className="w-full max-w-xl lg-w:3/4">
-              <h6 className="mb-2 font-semibold">{projects.title}</h6>
+            <div className="w-full max-w-xl lg:w-3/4">
+              <h6 className="mb-2 font-semibold">
+                <a
+                  href={projects.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-amber-600 hover:underline"
+                >
+                  {projects.title}
+                </a>
+              </h6>
               <p className="mb-4 text-zinc-500">{projects.description}</p>
               {projects.technologies.map((tech, index) => (
                 <span
