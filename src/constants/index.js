@@ -62,6 +62,8 @@ export const PROJECTS = [
 ];
 
 export const CONTACT = {
-  address: "Ghaziabad, Uttar Pradesh, Delhi-NCR",
+  description:
+    "With a passion for building intuitive digital experiences and exploring emerging technologies, I’m always eager to collaborate on exciting projects, share ideas, and grow alongside like-minded individuals. Feel free to connect with me on my socials or drop me an email—I’d love to network and explore opportunities together! Let’s create something amazing!",
+  address: "Delhi-NCR",
   email: "vidhiisaxena076@gmail.com",
 };
