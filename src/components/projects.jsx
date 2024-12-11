@@ -19,7 +19,7 @@ const projects = () => {
             <div className="w-full max-w-xl lg-w:3/4">
               <h6 className="mb-2 font-semibold">{projects.title}</h6>
               <p className="mb-4 text-zinc-500">{projects.description}</p>
-              {project.technologies.map((tech, index) => (
+              {projects.technologies.map((tech, index) => (
                 <span
                   key={index}
                   className="mr-2 mt-4 rounded bg-zinc-100 px-2 py-1 text-sm font-medium text-lime-900"
