@@ -43,7 +43,7 @@ const Navbar = () => {
           <FaGithub />
         </a>
         <a
-          href={"https://x.com/Vidhisaxena76"}
+          href={"https://x.com/itsvidsss"}
           target="_blank"
           rel="noopener noreferrer"
         >
